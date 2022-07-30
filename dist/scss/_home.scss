@@ -1,0 +1,27 @@
+.home{
+    height: 100%;
+    // 40% of the available viewport height 
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3)
+    ),
+    url('../img/Ruzigh_2.jpeg') center top;
+    background-size: cover;
+    // ampersand "&" always refers to the parent so its the same as ".home__name"
+    &__name{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 2px solid #fff;
+        &--last{
+            font-size: 5rem;
+            color: $secondary-color;
+        }
+    }
+}
