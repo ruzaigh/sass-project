@@ -1,18 +1,26 @@
 @import 'confiq';
 @import 'home';
+@import 'menu';
+@import 'about';
+@import 'project';
+@import 'contact';
+@import 'responsive';
 body{
     background: $primary-color;
-    color: #fff;
+    color: set-text-color($primary-color);
     // basically its 100% of the avaiable viewport
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
 }
 h1,h2,h3{
-    font-family: 400;
+    font-weight: 400;
+}
+.text-secondary{
+    color: $secondary-color;
 }
 a{
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 header{
@@ -46,5 +54,5 @@ footer{
     right: 1rem;
     text-align: right;
     padding: 1rem;
-    color: #fff;
+    color: set-text-color($primary-color);
 }
